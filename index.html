@@ -4,9 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Notre Mariage</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
-    <h1>Bienvenue à notre mariage !</h1>
-    <p>Plus d’informations à venir...</p>
+
+    <!-- Sélection de la langue -->
+    <div id="language-selection">
+        <h2>Choisissez votre langue / Choose your language / Wählen Sie Ihre Sprache / Scegli la tua lingua</h2>
+        <button onclick="setLanguage('fr')">Français</button>
+        <button onclick="setLanguage('en')">English</button>
+        <button onclick="setLanguage('de')">Deutsch</button>
+        <button onclick="setLanguage('it')">Italiano</button>
+    </div>
+
+    <!-- Contenu du site (initialement masqué) -->
+    <div id="content" style="display: none;">
+        <nav>
+            <ul>
+                <li><a href="#home" data-lang="home">Accueil</a></li>
+                <li><a href="#rsvp" data-lang="rsvp">RSVP</a></li>
+                <li><a href="#program" data-lang="program">Programme</a></li>
+                <li><a href="#links" data-lang="links">Liens utiles</a></li>
+            </ul>
+        </nav>
+
+        <!-- Section Accueil -->
+        <section id="home">
+            <h1 data-lang="welcome">Bienvenue à notre mariage !</h1>
+            <p data-lang="intro">Nous avons hâte de célébrer ce moment avec vous.</p>
+        </section>
+
+        <!-- Section RSVP -->
+        <section id="rsvp">
+            <h2 data-lang="rsvp">RSVP</h2>
+            <p data-lang="rsvp-text">Merci de confirmer votre présence en remplissant ce formulaire :</p>
+            <iframe src="TON_GOOGLE_FORMS_URL" width="100%" height="600px" frameborder="0"></iframe>
+        </section>
+
+        <!-- Section Programme -->
+        <section id="program">
+            <h2 data-lang="program">Programme</h2>
+            <p data-lang="program-text">Voici le déroulement de la journée...</p>
+        </section>
+
+        <!-- Section Liens utiles -->
+        <section id="links">
+            <h2 data-lang="links">Liens utiles</h2>
+            <p data-lang="links-text">Infos sur les logements, transports...</p>
+        </section>
+    </div>
+
 </body>
 </html>

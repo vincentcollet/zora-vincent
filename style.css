@@ -11,6 +11,21 @@ h1, h2 {
     color: #b59d73;
 }
 
+.overlay-text {
+    background: rgba(245, 240, 230, 0.6); /* Crème avec 60% de transparence */
+    padding: 20px;
+    border-radius: 15px; /* Bords arrondis */
+    text-align: center;
+    width: 50%; /* Ajustable selon le rendu souhaité */
+    max-width: 600px; /* Évite qu'il soit trop large */
+    margin: auto;
+    position: relative;
+}
+
+/* Améliorer le contraste du texte */
+.overlay-text h1, .overlay-text p {
+    color: #333; /* Texte foncé pour la lisibilité */
+}
 nav ul {
     list-style: none;
     padding: 0;

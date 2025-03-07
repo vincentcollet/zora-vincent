@@ -9,6 +9,14 @@ body {
     max-width: 100%;
 }
 
+/* Image de fond limitée à 400px */
+.header-image {
+    max-height: 400px;
+    overflow: hidden; /* Coupe l'excédent si nécessaire */
+    background-size: cover;
+    background-position: center;
+}
+
 /* Titres */
 h1, h2 {
     color: #b59d73;
@@ -21,21 +29,22 @@ h1, h2 {
     padding: 20px;
     border-radius: 15px;
     text-align: center;
-    width: 90%; /* Adaptatif */
-    max-width: 800px;
+    width: 90%;
+    max-width: 500px; /* Largeur optimale */
     margin: auto;
     position: relative;
 }
 
 /* Texte du cadre */
 .overlay-text h1 {
-    font-size: 2.2rem; /* Taille adaptée */
+    font-size: clamp(2rem, 5vw, 2.5rem); /* Taille qui s'adapte à l'écran */
     font-weight: bold;
     color: white;
+    white-space: nowrap; /* Garde le texte sur une seule ligne */
 }
 
 .overlay-text p {
-    font-size: 1.5rem;
+    font-size: clamp(1rem, 3vw, 1.5rem);
     color: white;
     margin-top: 10px;
 }
@@ -96,9 +105,22 @@ img {
 
 /* ✅ RESPONSIVE DESIGN - Adaptation aux petits écrans */
 @media (max-width: 768px) {
+    .header-image {
+        max-height: 300px; /* Réduction supplémentaire sur mobile */
+    }
+
     .overlay-text {
         width: 95%;
+        max-width: 350px; /* Largeur plus adaptée au mobile */
         padding: 15px;
+    }
+
+    .overlay-text h1 {
+        font-size: clamp(1.5rem, 6vw, 2rem);
+    }
+
+    .overlay-text p {
+        font-size: clamp(1rem, 4vw, 1.3rem);
     }
 
     nav {

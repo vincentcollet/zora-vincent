@@ -1,8 +1,8 @@
 // Définition des traductions
 const translations = {
     fr: {
-        welcome: "Bienvenue à notre mariage !",
-        intro: "Nous avons hâte de célébrer ce moment avec vous.",
+        welcome: "Zora & Vincent",
+        intro: "26/09/2025",
         rsvp: "RSVP",
         rsvp_text: "Merci de confirmer votre présence en remplissant ce formulaire :",
         program: "Programme",
@@ -11,8 +11,8 @@ const translations = {
         links_text: "Infos sur les logements, transports..."
     },
     en: {
-        welcome: "Welcome to our wedding!",
-        intro: "We can't wait to celebrate with you.",
+        welcome: "Zora & Vincent",
+        intro: "26/09/2025",
         rsvp: "RSVP",
         rsvp_text: "Please confirm your attendance by filling out this form:",
         program: "Program",
@@ -21,8 +21,8 @@ const translations = {
         links_text: "Information on accommodations, transport..."
     },
     de: {
-        welcome: "Willkommen zu unserer Hochzeit!",
-        intro: "Wir freuen uns, mit euch zu feiern.",
+        welcome: "Zora & Vincent",
+        intro: "26/09/2025",
         rsvp: "RSVP",
         rsvp_text: "Bitte bestätigen Sie Ihre Teilnahme, indem Sie dieses Formular ausfüllen:",
         program: "Programm",
@@ -31,8 +31,8 @@ const translations = {
         links_text: "Infos zu Unterkünften, Transport..."
     },
     it: {
-        welcome: "Benvenuti al nostro matrimonio!",
-        intro: "Non vediamo l'ora di festeggiare con voi.",
+        welcome: "Zora & Vincent",
+        intro: "26/09/2025",
         rsvp: "RSVP",
         rsvp_text: "Per favore confermate la vostra presenza compilando questo modulo:",
         program: "Programma",

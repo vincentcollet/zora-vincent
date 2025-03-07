@@ -12,7 +12,7 @@ h1, h2 {
 }
 
 .overlay-text {
-    background: rgba(245, 240, 230, 0.85); /* Moins de transparence pour mieux lire */
+    background: rgba(245, 240, 230, 0.95); /* Moins de transparence pour mieux lire */
     padding: 40px; /* Plus de marge intérieure */
     border-radius: 15px; /* Bords arrondis */
     text-align: center;
@@ -81,7 +81,7 @@ section {
     .overlay-text {
         width: 90%; /* Augmente la largeur pour mieux s'adapter aux mobiles */
         max-width: 300px; /* Supprime la limite max */
-        font-size: 0.4em; /* Réduit légèrement la taille du texte */
+        font-size: 0.2em; /* Réduit légèrement la taille du texte */
         padding: 20px; /* Réduit l'espace intérieur */
     }
 

@@ -8,11 +8,11 @@ const translations = {
         welcome: "Bienvenue à notre mariage !",
         intro: "Nous avons hâte de célébrer ce moment avec vous.",
         rsvp: "RSVP",
-        rsvp-text: "Merci de confirmer votre présence en remplissant ce formulaire :",
+        rsvp_text: "Merci de confirmer votre présence en remplissant ce formulaire :",
         program: "Programme",
-        program-text: "Voici le déroulement de la journée...",
+        program_text: "Voici le déroulement de la journée...",
         links: "Liens utiles",
-        links-text: "Infos sur les logements, transports..."
+        links_text: "Infos sur les logements, transports..."
     },
     en: {
         home: "Home",
@@ -22,11 +22,11 @@ const translations = {
         welcome: "Welcome to our wedding!",
         intro: "We can't wait to celebrate with you.",
         rsvp: "RSVP",
-        rsvp-text: "Please confirm your attendance by filling out this form:",
+        rsvp_text: "Please confirm your attendance by filling out this form:",
         program: "Program",
-        program-text: "Here is the schedule for the day...",
+        program_text: "Here is the schedule for the day...",
         links: "Useful Links",
-        links-text: "Information on accommodations, transport..."
+        links_text: "Information on accommodations, transport..."
     },
     de: {
         home: "Startseite",
@@ -36,11 +36,11 @@ const translations = {
         welcome: "Willkommen zu unserer Hochzeit!",
         intro: "Wir freuen uns, mit euch zu feiern.",
         rsvp: "RSVP",
-        rsvp-text: "Bitte bestätigen Sie Ihre Teilnahme, indem Sie dieses Formular ausfüllen:",
+        rsvp_text: "Bitte bestätigen Sie Ihre Teilnahme, indem Sie dieses Formular ausfüllen:",
         program: "Programm",
-        program-text: "Hier ist der Ablauf des Tages...",
+        program_text: "Hier ist der Ablauf des Tages...",
         links: "Nützliche Links",
-        links-text: "Infos zu Unterkünften, Transport..."
+        links_text: "Infos zu Unterkünften, Transport..."
     },
     it: {
         home: "Home",
@@ -50,11 +50,11 @@ const translations = {
         welcome: "Benvenuti al nostro matrimonio!",
         intro: "Non vediamo l'ora di festeggiare con voi.",
         rsvp: "RSVP",
-        rsvp-text: "Per favore confermate la vostra presenza compilando questo modulo:",
+        rsvp_text: "Per favore confermate la vostra presenza compilando questo modulo:",
         program: "Programma",
-        program-text: "Ecco il programma della giornata...",
+        program_text: "Ecco il programma della giornata...",
         links: "Link utili",
-        links-text: "Informazioni su alloggi, trasporti..."
+        links_text: "Informazioni su alloggi, trasporti..."
     }
 };
 

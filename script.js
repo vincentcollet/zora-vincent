@@ -69,4 +69,5 @@ function setLanguage(lang) {
             el.textContent = translations[lang][key];
         }
     });
+console.log("setLanguage function is loaded:", typeof setLanguage);
 }

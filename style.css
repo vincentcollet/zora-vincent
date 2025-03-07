@@ -80,9 +80,9 @@ section {
 @media (max-width: 500px) {
     .overlay-text {
         width: 90%; /* Augmente la largeur pour mieux s'adapter aux mobiles */
-        max-width: 300px; /* Supprime la limite max */
+        max-width: 1000px; /* Supprime la limite max */
         font-size: 0.2em; /* Réduit légèrement la taille du texte */
-        padding: 20px; /* Réduit l'espace intérieur */
+        padding: 10px; /* Réduit l'espace intérieur */
     }
 
     nav {

@@ -81,8 +81,8 @@ section {
     .overlay-text {
         width: 90%; /* Augmente la largeur pour mieux s'adapter aux mobiles */
         max-width: 1000px; /* Supprime la limite max */
-        font-size: 0.2em; /* Réduit légèrement la taille du texte */
-        padding: 10px; /* Réduit l'espace intérieur */
+        font-size: 0.18em; /* Réduit légèrement la taille du texte */
+        padding: 1px; /* Réduit l'espace intérieur */
     }
 
     nav {

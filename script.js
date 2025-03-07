@@ -1,10 +1,6 @@
 // Définition des traductions
 const translations = {
     fr: {
-        home: "Accueil",
-        rsvp: "RSVP",
-        program: "Programme",
-        links: "Liens utiles",
         welcome: "Bienvenue à notre mariage !",
         intro: "Nous avons hâte de célébrer ce moment avec vous.",
         rsvp: "RSVP",
@@ -15,10 +11,6 @@ const translations = {
         links_text: "Infos sur les logements, transports..."
     },
     en: {
-        home: "Home",
-        rsvp: "RSVP",
-        program: "Program",
-        links: "Useful Links",
         welcome: "Welcome to our wedding!",
         intro: "We can't wait to celebrate with you.",
         rsvp: "RSVP",
@@ -29,10 +21,6 @@ const translations = {
         links_text: "Information on accommodations, transport..."
     },
     de: {
-        home: "Startseite",
-        rsvp: "RSVP",
-        program: "Programm",
-        links: "Nützliche Links",
         welcome: "Willkommen zu unserer Hochzeit!",
         intro: "Wir freuen uns, mit euch zu feiern.",
         rsvp: "RSVP",
@@ -43,10 +31,6 @@ const translations = {
         links_text: "Infos zu Unterkünften, Transport..."
     },
     it: {
-        home: "Home",
-        rsvp: "RSVP",
-        program: "Programma",
-        links: "Link utili",
         welcome: "Benvenuti al nostro matrimonio!",
         intro: "Non vediamo l'ora di festeggiare con voi.",
         rsvp: "RSVP",
@@ -65,9 +49,11 @@ function setLanguage(lang) {
 
     document.querySelectorAll("[data-lang]").forEach(el => {
         let key = el.getAttribute("data-lang");
-        if (translations[lang][key]) {
+        if (translations[lang] && translations[lang][key]) {
             el.textContent = translations[lang][key];
         }
     });
-console.log("setLanguage function is loaded:", typeof setLanguage);
 }
+
+// Vérification du chargement du script
+console.log("Script chargé !");

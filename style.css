@@ -17,7 +17,7 @@ h1, h2 {
     border-radius: 15px; /* Bords arrondis */
     text-align: center;
     width: 100%; /* Ajuster la largeur à 50% */
-    max-width: 700px; /* Taille max pour éviter d’être trop grand */
+    max-width: 1000px; /* Taille max pour éviter d’être trop grand */
     margin: auto;
     position: relative;
 }

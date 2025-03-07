@@ -12,14 +12,20 @@ h1, h2 {
 }
 
 .overlay-text {
-    background: rgba(245, 240, 230, 0.6); /* Crème avec 60% de transparence */
-    padding: 20px;
+    background: rgba(245, 240, 230, 0.6); /* Fond crème avec 60% de transparence */
+    padding: 30px; /* Plus de marge intérieure */
     border-radius: 15px; /* Bords arrondis */
     text-align: center;
-    width: 50%; /* Ajustable selon le rendu souhaité */
-    max-width: 600px; /* Évite qu'il soit trop large */
+    width: 70%; /* Augmenter la largeur à 70% */
+    max-width: 800px; /* Ajuster la taille maximale */
     margin: auto;
     position: relative;
+}
+
+/* Améliorer le contraste du texte */
+.overlay-text h1, .overlay-text p {
+    color: #333; /* Texte foncé pour la lisibilité */
+    font-size: 1.5em; /* Ajuster la taille de police si besoin */
 }
 
 /* Améliorer le contraste du texte */

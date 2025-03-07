@@ -15,6 +15,7 @@ body {
     overflow: hidden; /* Coupe l'excédent si nécessaire */
     background-size: cover;
     background-position: center;
+    position: relative;
 }
 
 /* Titres */
@@ -32,7 +33,10 @@ h1, h2 {
     width: 90%;
     max-width: 500px; /* Largeur optimale */
     margin: auto;
-    position: relative;
+    position: absolute; /* Positionnement absolu pour le placer où on veut */
+    top: 20%; /* Remonte le cadre pour qu'il soit plus visible */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centre le texte */
 }
 
 /* Texte du cadre */
@@ -113,6 +117,7 @@ img {
         width: 95%;
         max-width: 350px; /* Largeur plus adaptée au mobile */
         padding: 15px;
+        top: 25%; /* Ajuste encore la hauteur pour mobile */
     }
 
     .overlay-text h1 {

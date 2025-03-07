@@ -77,11 +77,11 @@ section {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 /* Ajustements pour les petits écrans */
-@media (max-width: 768px) {
+@media (max-width: 500px) {
     .overlay-text {
         width: 90%; /* Augmente la largeur pour mieux s'adapter aux mobiles */
-        max-width: none; /* Supprime la limite max */
-        font-size: 1.2em; /* Réduit légèrement la taille du texte */
+        max-width: 300px; /* Supprime la limite max */
+        font-size: 0.4em; /* Réduit légèrement la taille du texte */
         padding: 20px; /* Réduit l'espace intérieur */
     }
 

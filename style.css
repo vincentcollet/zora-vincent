@@ -12,26 +12,31 @@ h1, h2 {
 }
 
 .overlay-text {
-    background: rgba(245, 240, 230, 0.6); /* Fond crème avec 60% de transparence */
+    background: rgba(245, 240, 230, 0.85); /* Moins de transparence pour mieux lire */
     padding: 30px; /* Plus de marge intérieure */
     border-radius: 15px; /* Bords arrondis */
     text-align: center;
-    width: 70%; /* Augmenter la largeur à 70% */
-    max-width: 800px; /* Ajuster la taille maximale */
+    width: 50%; /* Ajuster la largeur à 50% */
+    max-width: 600px; /* Taille max pour éviter d’être trop grand */
     margin: auto;
     position: relative;
 }
 
-/* Améliorer le contraste du texte */
-.overlay-text h1, .overlay-text p {
-    color: #333; /* Texte foncé pour la lisibilité */
-    font-size: 1.5em; /* Ajuster la taille de police si besoin */
+/* Modifier le style du texte */
+.overlay-text h1 {
+    font-size: 2.5em; /* Ajuster la taille */
+    font-weight: bold;
+    color: white; /* Texte en blanc */
+    white-space: nowrap; /* Empêcher le retour à la ligne */
 }
 
-/* Améliorer le contraste du texte */
-.overlay-text h1, .overlay-text p {
-    color: #333; /* Texte foncé pour la lisibilité */
+.overlay-text p {
+    font-size: 1.8em;
+    color: white; /* Texte en blanc */
+    margin-top: 10px;
 }
+
+/* Navigation */
 nav ul {
     list-style: none;
     padding: 0;
@@ -48,6 +53,7 @@ nav ul li a {
     font-weight: bold;
 }
 
+/* Boutons */
 button {
     background-color: #b59d73;
     color: white;
@@ -62,6 +68,7 @@ button:hover {
     background-color: #8b7a57;
 }
 
+/* Sections */
 section {
     padding: 20px;
     margin: 20px;

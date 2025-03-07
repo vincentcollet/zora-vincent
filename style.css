@@ -13,11 +13,11 @@ h1, h2 {
 
 .overlay-text {
     background: rgba(245, 240, 230, 0.85); /* Moins de transparence pour mieux lire */
-    padding: 30px; /* Plus de marge intérieure */
+    padding: 40px; /* Plus de marge intérieure */
     border-radius: 15px; /* Bords arrondis */
     text-align: center;
-    width: 50%; /* Ajuster la largeur à 50% */
-    max-width: 600px; /* Taille max pour éviter d’être trop grand */
+    width: 100%; /* Ajuster la largeur à 50% */
+    max-width: 700px; /* Taille max pour éviter d’être trop grand */
     margin: auto;
     position: relative;
 }

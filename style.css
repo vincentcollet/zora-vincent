@@ -24,33 +24,34 @@ h1, h2 {
     font-size: clamp(1.8rem, 3vw, 2.5rem); /* Ajuste dynamiquement selon l'écran */
 }
 
-/* Cadre du texte principal */
+/* ✅ Cadre du texte principal - Correction du positionnement */
 .overlay-text {
-    background: rgba(245, 240, 230, 0.9); /* Moins de transparence pour une meilleure lisibilité */
+    background: rgba(245, 240, 230, 0.85); /* Plus opaque pour bien voir le texte */
     padding: 20px;
     border-radius: 15px;
     text-align: center;
-    width: 90%;
+    width: 50%; /* Largeur augmentée */
     max-width: 500px; /* Largeur optimale */
     margin: auto;
-    position: absolute; /* Positionnement absolu pour le placer où on veut */
-    top: 20%; /* Remonte le cadre pour qu'il soit plus visible */
+    position: absolute; /* Permet de positionner précisément */
+    top: 35%; /* Ajusté pour bien positionner */
     left: 50%;
-    transform: translate(-50%, -50%); /* Centre le texte */
+    transform: translate(-50%, -50%); /* Centre précisément */
 }
 
-/* Texte du cadre */
+/* ✅ Texte du cadre - Correction de l'alignement */
 .overlay-text h1 {
-    font-size: clamp(2rem, 5vw, 2.5rem); /* Taille qui s'adapte à l'écran */
+    font-size: clamp(2rem, 4vw, 2.5rem); /* Ajusté pour éviter le retour à la ligne */
     font-weight: bold;
     color: white;
-    white-space: nowrap; /* Garde le texte sur une seule ligne */
+    white-space: nowrap; /* Garde sur une seule ligne */
+    margin-bottom: 10px;
 }
 
 .overlay-text p {
     font-size: clamp(1rem, 3vw, 1.5rem);
     color: white;
-    margin-top: 10px;
+    margin-top: 0;
 }
 
 /* Navigation */
@@ -99,29 +100,21 @@ section {
     max-width: 800px;
 }
 
-/* Images responsive */
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: auto;
-}
-
-/* ✅ RESPONSIVE DESIGN - Adaptation aux petits écrans */
+/* ✅ Ajustements responsive */
 @media (max-width: 768px) {
     .header-image {
-        max-height: 300px; /* Réduction supplémentaire sur mobile */
+        max-height: 300px; /* Réduction sur mobile */
     }
 
     .overlay-text {
-        width: 95%;
-        max-width: 350px; /* Largeur plus adaptée au mobile */
+        width: 80%; /* Plus large sur mobile */
+        max-width: 350px;
         padding: 15px;
-        top: 25%; /* Ajuste encore la hauteur pour mobile */
+        top: 40%; /* Ajusté pour mobile */
     }
 
     .overlay-text h1 {
-        font-size: clamp(1.5rem, 6vw, 2rem);
+        font-size: clamp(1.5rem, 5vw, 2rem);
     }
 
     .overlay-text p {

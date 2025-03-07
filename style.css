@@ -1,3 +1,4 @@
+/* Styles généraux */
 body {
     font-family: 'Lora', serif;
     background-color: #f8f4f0;
@@ -5,34 +6,37 @@ body {
     text-align: center;
     margin: 0;
     padding: 0;
+    max-width: 100%;
 }
 
+/* Titres */
 h1, h2 {
     color: #b59d73;
+    font-size: clamp(1.8rem, 3vw, 2.5rem); /* Ajuste dynamiquement selon l'écran */
 }
 
+/* Cadre du texte principal */
 .overlay-text {
-    background: rgba(245, 240, 230, 0.95); /* Moins de transparence pour mieux lire */
-    padding: 40px; /* Plus de marge intérieure */
-    border-radius: 15px; /* Bords arrondis */
+    background: rgba(245, 240, 230, 0.9); /* Moins de transparence pour une meilleure lisibilité */
+    padding: 20px;
+    border-radius: 15px;
     text-align: center;
-    width: 100%; /* Ajuster la largeur à 50% */
-    max-width: 1000px; /* Taille max pour éviter d’être trop grand */
+    width: 90%; /* Adaptatif */
+    max-width: 800px;
     margin: auto;
     position: relative;
 }
 
-/* Modifier le style du texte */
+/* Texte du cadre */
 .overlay-text h1 {
-    font-size: 2.5em; /* Ajuster la taille */
+    font-size: 2.2rem; /* Taille adaptée */
     font-weight: bold;
-    color: white; /* Texte en blanc */
-    white-space: nowrap; /* Empêcher le retour à la ligne */
+    color: white;
 }
 
 .overlay-text p {
-    font-size: 1.8em;
-    color: white; /* Texte en blanc */
+    font-size: 1.5rem;
+    color: white;
     margin-top: 10px;
 }
 
@@ -40,10 +44,12 @@ h1, h2 {
 nav ul {
     list-style: none;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 nav ul li {
-    display: inline;
     margin: 10px;
 }
 
@@ -62,6 +68,7 @@ button {
     margin: 5px;
     cursor: pointer;
     font-size: 16px;
+    border-radius: 8px;
 }
 
 button:hover {
@@ -71,24 +78,32 @@ button:hover {
 /* Sections */
 section {
     padding: 20px;
-    margin: 20px;
+    margin: 20px auto;
     background: white;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 800px;
 }
-/* Ajustements pour les petits écrans */
-@media (max-width: 600px) {
+
+/* Images responsive */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+/* ✅ RESPONSIVE DESIGN - Adaptation aux petits écrans */
+@media (max-width: 768px) {
     .overlay-text {
-        width: 90%; /* Augmente la largeur pour mieux s'adapter aux mobiles */
-        max-width: 500px; /* Supprime la limite max */
-        font-size: 0.18em; /* Réduit légèrement la taille du texte */
-        padding: 1px; /* Réduit l'espace intérieur */
+        width: 95%;
+        padding: 15px;
     }
 
     nav {
-        display: flex;
         flex-direction: column;
-        text-align: center;
+        align-items: center;
     }
 
     nav ul {
@@ -96,16 +111,17 @@ section {
     }
 
     nav ul li {
-        display: block; /* Affiche les liens en colonne */
+        display: block;
         margin: 10px 0;
     }
 
     button {
-        width: 100%; /* Les boutons prennent toute la largeur */
-        font-size: 1.1em;
+        width: 100%;
+        font-size: 1em;
     }
 
     section {
         padding: 15px;
+        width: 95%;
     }
 }

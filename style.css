@@ -22,15 +22,16 @@ h1, h2 {
     position: relative;
 }
 
+/* Texte responsive qui s’adapte à la largeur du cadre */
 .overlay-text h1 {
-    font-size: calc(1.5rem + 1vw);
+    font-size: calc(1rem + 5vw); /* Adapte la taille en fonction de la largeur */
     font-weight: bold;
     color: white;
     white-space: nowrap;
 }
 
 .overlay-text p {
-    font-size: calc(1rem + 0.5vw);
+    font-size: calc(0.8rem + 2.5vw); /* Adapte la taille du texte en fonction du cadre */
     color: white;
     margin-top: 10px;
 }
@@ -76,8 +77,16 @@ section {
 @media (max-width: 800px) {
     .overlay-text {
         width: 70vw; /* Toujours 70% de la largeur de l’écran */
-        max-width: none; /* Supprime la limite max */
+        max-width: none;
         padding: 20px;
+    }
+
+    .overlay-text h1 {
+        font-size: calc(1rem + 4vw); /* Ajuste la taille pour les petits écrans */
+    }
+
+    .overlay-text p {
+        font-size: calc(0.8rem + 2vw);
     }
 
     nav ul li {

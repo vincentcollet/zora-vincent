@@ -12,31 +12,29 @@ h1, h2 {
 }
 
 .overlay-text {
-    background: rgba(245, 240, 230, 0.95); /* Moins de transparence pour mieux lire */
-    padding: 40px; /* Plus de marge intérieure */
-    border-radius: 15px; /* Bords arrondis */
+    background: rgba(245, 240, 230, 0.95);
+    padding: 40px;
+    border-radius: 15px;
     text-align: center;
-    width: 100%; /* Ajuster la largeur à 50% */
-    max-width: 1000px; /* Taille max pour éviter d’être trop grand */
+    width: 100%;
+    max-width: 1000px;
     margin: auto;
     position: relative;
 }
 
-/* Modifier le style du texte */
 .overlay-text h1 {
-    font-size: 2.5em; /* Ajuster la taille */
+    font-size: calc(1.5rem + 1vw);
     font-weight: bold;
-    color: white; /* Texte en blanc */
-    white-space: nowrap; /* Empêcher le retour à la ligne */
+    color: white;
+    white-space: nowrap;
 }
 
 .overlay-text p {
-    font-size: 1.8em;
-    color: white; /* Texte en blanc */
+    font-size: calc(1rem + 0.5vw);
+    color: white;
     margin-top: 10px;
 }
 
-/* Navigation */
 nav ul {
     list-style: none;
     padding: 0;
@@ -53,13 +51,11 @@ nav ul li a {
     font-weight: bold;
 }
 
-/* Boutons */
 button {
     background-color: #b59d73;
     color: white;
     border: none;
     padding: 10px 20px;
-    margin: 5px;
     cursor: pointer;
     font-size: 16px;
 }
@@ -68,7 +64,6 @@ button:hover {
     background-color: #8b7a57;
 }
 
-/* Sections */
 section {
     padding: 20px;
     margin: 20px;
@@ -76,36 +71,22 @@ section {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-/* Ajustements pour les petits écrans */
-@media (max-width: 600px) {
+
+/* Responsive */
+@media (max-width: 800px) {
     .overlay-text {
-        width: 90%; /* Augmente la largeur pour mieux s'adapter aux mobiles */
-        max-width: 500px; /* Supprime la limite max */
-        font-size: 0.18em; /* Réduit légèrement la taille du texte */
-        padding: 1px; /* Réduit l'espace intérieur */
-    }
-
-    nav {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
-
-    nav ul {
-        padding: 0;
+        width: 90%;
+        max-width: 500px;
+        padding: 20px;
     }
 
     nav ul li {
-        display: block; /* Affiche les liens en colonne */
+        display: block;
         margin: 10px 0;
     }
 
     button {
-        width: 100%; /* Les boutons prennent toute la largeur */
+        width: 100%;
         font-size: 1.1em;
-    }
-
-    section {
-        padding: 15px;
     }
 }

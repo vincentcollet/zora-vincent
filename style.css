@@ -16,7 +16,7 @@ h1, h2 {
     padding: 40px;
     border-radius: 15px;
     text-align: center;
-    width: 100%;
+    width: 70vw; /* 70% de la largeur de l'écran */
     max-width: 1000px;
     margin: auto;
     position: relative;
@@ -75,8 +75,8 @@ section {
 /* Responsive */
 @media (max-width: 800px) {
     .overlay-text {
-        width: 90%;
-        max-width: 500px;
+        width: 70vw; /* Toujours 70% de la largeur de l’écran */
+        max-width: none; /* Supprime la limite max */
         padding: 20px;
     }
 

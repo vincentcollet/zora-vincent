@@ -12,53 +12,72 @@ h1, h2 {
 }
 
 .image-container {
-    align-items: flex-end
+    align-items: flex-end;
 }
 
+/* ✅ Fond du texte sous l’image */
 .overlay-text {
     background: rgba(245, 240, 230, 0.95);
     padding: 40px;
-    border-radius: 15px;
     text-align: center;
-    width: 90vw; /* 90% de la largeur de l'écran */
+    width: 90vw;
     max-width: 1000px;
     margin: auto;
     position: relative;
     bottom: 0;
 }
 
-/* Texte responsive qui s’adapte à la largeur du cadre */
+/* ✅ Texte responsive */
 .overlay-text h1 {
-    font-size: calc(1rem + 5vw); /* Adapte la taille en fonction de la largeur */
+    font-size: calc(1rem + 5vw);
     font-weight: bold;
     color: white;
     white-space: nowrap;
 }
 
 .overlay-text p {
-    font-size: calc(0.8rem + 2.5vw); /* Adapte la taille du texte en fonction du cadre */
+    font-size: calc(0.8rem + 2.5vw);
     color: white;
     margin-top: 10px;
 }
 
-nav ul {
+/* ✅ Navigation responsive */
+.navbar {
+    width: 100%; /* La bannière prend toute la largeur */
+    background: rgba(245, 240, 230, 0.95); /* Fond identique à l’overlay */
+    padding: 15px 0;
+    position: relative;
+    text-align: center;
+}
+
+/* ✅ Liste des liens */
+.navbar ul {
     list-style: none;
     padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Centrer les éléments */
+    gap: 30px;
 }
 
-nav ul li {
+/* ✅ Liens du menu */
+.navbar ul li {
     display: inline;
-    margin: 10px;
 }
 
-nav ul li a {
+.navbar ul li a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
-    font-size: calc(0.8rem + 1vw); /* Taille de texte responsive */
+    font-size: calc(0.8rem + 1vw); /* Texte responsive */
     transition: color 0.3s;
 }
 
+.navbar ul li a:hover {
+    color: #b59d73;
+}
+
+/* ✅ Boutons */
 button {
     background-color: #b59d73;
     color: white;
@@ -68,14 +87,11 @@ button {
     font-size: 16px;
 }
 
-nav ul li a:hover {
-    color: #b59d73;
-}
-
 button:hover {
     background-color: #8b7a57;
 }
 
+/* ✅ Sections */
 section {
     padding: 20px;
     margin: 20px;
@@ -84,4 +100,29 @@ section {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* ✅ Responsive */
+@media (max-width: 800px) {
+    .overlay-text {
+        width: 70vw;
+        max-width: none;
+        padding: 20px;
+    }
 
+    .overlay-text h1 {
+        font-size: calc(1rem + 4vw);
+    }
+
+    .overlay-text p {
+        font-size: calc(0.8rem + 2vw);
+    }
+
+    /* ✅ Ajustement de la navigation pour petits écrans */
+    .navbar ul {
+        flex-direction: column; /* Affichage en colonne */
+        gap: 10px;
+    }
+
+    .navbar ul li a {
+        font-size: calc(1rem + 2vw); /* Texte plus grand sur mobile */
+    }
+}

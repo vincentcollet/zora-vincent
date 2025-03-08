@@ -2,7 +2,7 @@
 const translations = {
     fr: {
         welcome: "Zora & Vincent",
-        intro: "26/09/2025",
+        intro: "06/09/2025",
         rsvp: "RSVP",
         rsvp_text: "Merci de confirmer votre présence en remplissant ce formulaire :",
         program: "Programme",
@@ -12,7 +12,7 @@ const translations = {
     },
     en: {
         welcome: "Zora & Vincent",
-        intro: "26/09/2025",
+        intro: "06/09/2025",
         rsvp: "RSVP",
         rsvp_text: "Please confirm your attendance by filling out this form:",
         program: "Program",
@@ -22,7 +22,7 @@ const translations = {
     },
     de: {
         welcome: "Zora & Vincent",
-        intro: "26/09/2025",
+        intro: "06/09/2025",
         rsvp: "RSVP",
         rsvp_text: "Bitte bestätigen Sie Ihre Teilnahme, indem Sie dieses Formular ausfüllen:",
         program: "Programm",
@@ -32,7 +32,7 @@ const translations = {
     },
     it: {
         welcome: "Zora & Vincent",
-        intro: "26/09/2025",
+        intro: "06/09/2025",
         rsvp: "RSVP",
         rsvp_text: "Per favore confermate la vostra presenza compilando questo modulo:",
         program: "Programma",

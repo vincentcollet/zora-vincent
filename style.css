@@ -11,6 +11,10 @@ h1, h2 {
     color: #b59d73;
 }
 
+.image-container {
+    align-items: flex-end
+}
+
 .overlay-text {
     background: rgba(245, 240, 230, 0.95);
     padding: 40px;

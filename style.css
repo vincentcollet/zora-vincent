@@ -16,10 +16,11 @@ h1, h2 {
     padding: 40px;
     border-radius: 15px;
     text-align: center;
-    width: 70vw; /* 70% de la largeur de l'écran */
+    width: 90vw; /* 90% de la largeur de l'écran */
     max-width: 1000px;
     margin: auto;
     position: relative;
+    bottom: 0;
 }
 
 /* Texte responsive qui s’adapte à la largeur du cadre */

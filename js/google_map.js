@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         scrolling="no" 
                         marginheight="0" 
                         marginwidth="0" 
-                        src="https://maps.google.com/maps?width=600&height=400&hl=en&q=La%20Carri%C3%A8re%20Bioul&t=&z=11&ie=UTF8&iwloc=B&output=embed">
+                        src="https://maps.google.com/maps?hl=en&q=La%20Carri%C3%A8re%20Bioul&t=&z=11&ie=UTF8&iwloc=B&output=embed">
                     </iframe>
                 </div>
             </div>

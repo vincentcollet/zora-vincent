@@ -297,7 +297,7 @@
 						</a>
 					</li>
 					<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/2021/IMG_2910.JPG); ">
-						<a href="#" class="color-2">
+						<a href="images/2021/IMG_2910.JPG">
 							<div class="case-studies-summary">
 								<span></span>
 								<h2>2021</h2>
@@ -307,7 +307,7 @@
 
 
 					<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/2022/IMG_6127.jpg); ">
-						<a href="#" class="color-3">
+						<a href="images/2022/IMG_6127.jpg">
 							<div class="case-studies-summary">
 								<span></span>
 								<h2>2022</h2>
@@ -315,7 +315,7 @@
 						</a>
 					</li>
 					<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/2023/IMG_2221.jpg); ">
-						<a href="#" class="color-4">
+						<a href="images/2023/IMG_2221.jpg">
 							<div class="case-studies-summary">
 								<span></span>
 								<h2>2023</h2>
@@ -324,7 +324,7 @@
 					</li>
 
 						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/2024/Vincent\ et\ Zora-8.JPG); ">
-							<a href="#" class="color-3">
+							<a href="images/2024/Vincent\ et\ Zora-8.JPG">
 								<div class="case-studies-summary">
 									<span></span>
 									<h2>2024</h2>
@@ -332,13 +332,21 @@
 							</a>
 						</li>
 						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/2025/IMG_2113.jpg); ">
-							<a href="#" class="color-4">
+							<a href="images/2025/IMG_2113.jpg">
 								<div class="case-studies-summary">
 									<span></span>
 									<h2>2025</h2>
 								</div>
 							</a>
 						</li>
+					<script>
+							document.addEventListener("click", function(event) {
+								let galleryItem = document.querySelector(".one-third");
+								if (!galleryItem.contains(event.target)) {
+									window.history.back();
+								}
+							});
+					</script>
 					</ul>		
 				</div>
 			</div>

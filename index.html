@@ -340,29 +340,7 @@
 			</div>
 		</div>
 	</div>
-	
-	<script>
-		document.addEventListener("DOMContentLoaded", function() {
-			// Sélectionne toutes les images affichées en arrière-plan
-			let galleryItems = document.querySelectorAll(".one-third");
-	
-			// Vérifie si des images sont bien affichées
-			let imagesDisplayed = Array.from(galleryItems).some(item => {
-				return item.style.backgroundImage.includes("images/");
-			});
-	
-			// Si au moins une image est affichée, active la fonction de retour en arrière
-			if (imagesDisplayed) {
-				document.addEventListener("click", function(event) {
-					let clickedInsideGallery = Array.from(galleryItems).some(item => item.contains(event.target));
-	
-					if (!clickedInsideGallery) {
-						window.history.back();
-					}
-				});
-			}
-		});
-	</script>
+
 	
 	<footer id="fh5co-footer" role="contentinfo">
 		<div class="container">

@@ -108,6 +108,34 @@
 		</div>
 	</header>
 
+<!-- Inclusion du script SimplyCountdown -->
+<script src="js/simplyCountdown.js"></script>
+
+<!-- Initialisation du compteur avec la bonne date -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        simplyCountdown('.simply-countdown-one', {
+            year: 2025,
+            month: 9,
+            day: 6,
+            hours: 0,
+            minutes: 0,
+            seconds: 0,
+            words: { 
+                days: 'jour', 
+                hours: 'heure', 
+                minutes: 'minute', 
+                seconds: 'seconde', 
+                pluralLetter: 's' 
+            },
+            plural: true,
+            inline: false,
+            enableUtc: true,
+            refresh: 1000,
+            zeroPad: true
+        });
+    });
+</script>
 	<div id="fh5co-couple">
 		<div class="container">
 			<div class="row">
@@ -210,7 +238,7 @@
 							<div class="timeline-panel">
 								<div class="timeline-heading">
 									<h3 class="timeline-title">Notre première rencontre</h3>
-									<span class="date">15 septembre 2014/span>
+									<span class="date">15 septembre 2014</span>
 								</div>
 								<div class="timeline-body">
 									<p>Nous nous sommes rencontrés pour la première fois lors de nos études. De caractère diamétralement opposés, nous nous sommes, dans un premier temps, détestés</p>

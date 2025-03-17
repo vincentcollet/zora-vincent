@@ -342,18 +342,24 @@
 	</div>
 	
 	<script>
-		document.addEventListener("click", function(event) {
+		document.addEventListener("DOMContentLoaded", function() {
+			// Sélectionne toutes les images affichées en arrière-plan
 			let galleryItems = document.querySelectorAll(".one-third");
-			let clickedInsideGallery = false;
 	
-			galleryItems.forEach(item => {
-				if (item.contains(event.target)) {
-					clickedInsideGallery = true;
-				}
+			// Vérifie si des images sont bien affichées
+			let imagesDisplayed = Array.from(galleryItems).some(item => {
+				return item.style.backgroundImage.includes("images/");
 			});
 	
-			if (!clickedInsideGallery) {
-				window.history.back();
+			// Si au moins une image est affichée, active la fonction de retour en arrière
+			if (imagesDisplayed) {
+				document.addEventListener("click", function(event) {
+					let clickedInsideGallery = Array.from(galleryItems).some(item => item.contains(event.target));
+	
+					if (!clickedInsideGallery) {
+						window.history.back();
+					}
+				});
 			}
 		});
 	</script>

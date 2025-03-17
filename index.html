@@ -287,51 +287,47 @@
 			<div class="row row-bottom-padded-md">
 				<div class="col-md-12">
 					<ul id="fh5co-gallery-list">
-						
-						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images//2020/IMG_1182.jpg); "> 
-						<a href="images//2020/IMG_1182.jpg">
-							<div class="case-studies-summary">
-								<span>L'année de notre rencontre</span>
-								<h2>2020</h2>
-							</div>
-						</a>
-					</li>
-					<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/2021/IMG_2910.JPG); ">
-						<a href="images/2021/IMG_2910.JPG">
-							<div class="case-studies-summary">
-								<span></span>
-								<h2>2021</h2>
-							</div>
-						</a>
-					</li>
-
-
-					<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/2022/IMG_6127.jpg); ">
-						<a href="images/2022/IMG_6127.jpg">
-							<div class="case-studies-summary">
-								<span></span>
-								<h2>2022</h2>
-							</div>
-						</a>
-					</li>
-					<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/2023/IMG_2221.jpg); ">
-						<a href="images/2023/IMG_2221.jpg">
-							<div class="case-studies-summary">
-								<span></span>
-								<h2>2023</h2>
-							</div>
-						</a>
-					</li>
-
-						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/2024/Vincent\ et\ Zora-8.JPG); ">
-							<a href="images/2024/Vincent\ et\ Zora-8.JPG">
+						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/2020/IMG_1182.jpg);"> 
+							<a href="images/2020/IMG_1182.jpg">
+								<div class="case-studies-summary">
+									<span>L'année de notre rencontre</span>
+									<h2>2020</h2>
+								</div>
+							</a>
+						</li>
+						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/2021/IMG_2910.JPG);">
+							<a href="images/2021/IMG_2910.JPG">
+								<div class="case-studies-summary">
+									<span></span>
+									<h2>2021</h2>
+								</div>
+							</a>
+						</li>
+						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/2022/IMG_6127.jpg);">
+							<a href="images/2022/IMG_6127.jpg">
+								<div class="case-studies-summary">
+									<span></span>
+									<h2>2022</h2>
+								</div>
+							</a>
+						</li>
+						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/2023/IMG_2221.jpg);">
+							<a href="images/2023/IMG_2221.jpg">
+								<div class="case-studies-summary">
+									<span></span>
+									<h2>2023</h2>
+								</div>
+							</a>
+						</li>
+						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/2024/Vincent%20et%20Zora-8.JPG);">
+							<a href="images/2024/Vincent%20et%20Zora-8.JPG">
 								<div class="case-studies-summary">
 									<span></span>
 									<h2>2024</h2>
 								</div>
 							</a>
 						</li>
-						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/2025/IMG_2113.jpg); ">
+						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/2025/IMG_2113.jpg);">
 							<a href="images/2025/IMG_2113.jpg">
 								<div class="case-studies-summary">
 									<span></span>
@@ -339,20 +335,29 @@
 								</div>
 							</a>
 						</li>
-					<script>
-							document.addEventListener("click", function(event) {
-								let galleryItem = document.querySelector(".one-third");
-								if (!galleryItem.contains(event.target)) {
-									window.history.back();
-								}
-							});
-					</script>
-					</ul>		
+					</ul>        
 				</div>
 			</div>
 		</div>
 	</div>
-
+	
+	<script>
+		document.addEventListener("click", function(event) {
+			let galleryItems = document.querySelectorAll(".one-third");
+			let clickedInsideGallery = false;
+	
+			galleryItems.forEach(item => {
+				if (item.contains(event.target)) {
+					clickedInsideGallery = true;
+				}
+			});
+	
+			if (!clickedInsideGallery) {
+				window.history.back();
+			}
+		});
+	</script>
+	
 	<footer id="fh5co-footer" role="contentinfo">
 		<div class="container">
 

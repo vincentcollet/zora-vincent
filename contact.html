@@ -118,51 +118,72 @@
 			<div class="row">
 				<div class="col-md-6 col-md-push-6 animate-box">
 					<h3>Confirmez votre présence</h3>
-					<form action="#">
+					<form id="formMariage">
 						<div class="row form-group">
 							<div class="col-md-6">
 								<label for="fname">Prénom</label>
-								<input type="text" id="fname" class="form-control" placeholder="Votre prénom">
+								<input type="text" name="fname" id="fname" class="form-control" placeholder="Votre prénom" required>
 							</div>
 							<div class="col-md-6">
 								<label for="lname">Nom</label>
-								<input type="text" id="lname" class="form-control" placeholder="Votre nom">
+								<input type="text" name="lname" id="lname" class="form-control" placeholder="Votre nom" required>
 							</div>
 						</div>
 						<div class="row form-group">
 							<div class="col-md-6">
-								<label for="fname">Nombre de personne</label>
-								<input type="text" id="fname" class="form-control" placeholder="Combien serez-vous ?">
+								<label for="nombre">Nombre de personnes</label>
+								<input type="number" name="nombre" id="nombre" class="form-control" placeholder="Combien serez-vous ?" required>
 							</div>
 							<div class="col-md-6">
-								<label for="lname">Téléphone</label>
-								<input type="text" id="lname" class="form-control" placeholder="Indiquez votre numéro de téléphone">
+								<label for="phone">Téléphone</label>
+								<input type="text" name="phone" id="phone" class="form-control" placeholder="Indiquez votre numéro de téléphone" required>
 							</div>
 						</div>
 						<div class="row form-group">
 							<div class="col-md-12">
 								<label for="email">Email</label>
-								<input type="text" id="email" class="form-control" placeholder="Votre adresse mail">
+								<input type="email" name="email" id="email" class="form-control" placeholder="Votre adresse mail" required>
 							</div>
 						</div>
-
+					
 						<div class="row form-group">
 							<div class="col-md-12">
 								<label for="subject">Sujet</label>
-								<input type="text" id="subject" class="form-control" placeholder="Sujet du message">
+								<input type="text" name="subject" id="subject" class="form-control" placeholder="Sujet du message" required>
 							</div>
 						</div>
-
+					
 						<div class="row form-group">
 							<div class="col-md-12">
 								<label for="message">Message</label>
-								<textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="[Écrivez-nous quelque chose"></textarea>
+								<textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Écrivez-nous quelque chose" required></textarea>
 							</div>
 						</div>
 						<div class="form-group">
 							<input type="submit" value="Envoyer le message" class="btn btn-primary">
 						</div>
-
+					</form>
+					
+					<script>
+					document.getElementById("formMariage").addEventListener("submit", function(e) {
+					  e.preventDefault();
+					
+					  const formData = new FormData(this);
+					
+					  fetch('Thttps://script.google.com/macros/s/AKfycbxqsTcocAi7XlPZIddjxpwWIcBtlMey1cNlftxs9FU_OQ6OY_a_B9Q7v3DsM3lsbj0h/exec', {
+						method: 'POST',
+						mode: 'no-cors',
+						body: formData
+					  })
+					  .then(() => {
+						alert("Merci ! Votre message a bien été envoyé.");
+						document.getElementById("formMariage").reset();
+					  })
+					  .catch(() => {
+						alert("Une erreur est survenue, veuillez réessayer.");
+					  });
+					});
+					</script>
 					</form>		
 				</div>
 				<div class="col-md-5 col-md-pull-5 animate-box">

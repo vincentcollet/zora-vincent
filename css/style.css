@@ -818,6 +818,10 @@ h1, h2, h3, h4, h5, h6, figure {
   font-size: 23px;
   content: "\e9af";
 }
+.fh5co-contact-info ul li.bank:before {
+  font-size: 30px;
+  content: "\e075";
+}
 
 form label {
   font-weight: normal !important;

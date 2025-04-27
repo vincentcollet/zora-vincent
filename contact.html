@@ -82,29 +82,50 @@
 							</ul>
 						</li> -->
 						<li class ="active"><a href="contact.html">RSVP</a></li>
+						<li><a href="gallery.html">Gallerie</a></li>
 					</ul>
 				</div>
 			</div>			
 		</div>
 	</nav>
 	
-
-	<header id="fh5co-header" class="fh5co-cover" role="banner" style="background-image:url(images/Hadrien/Hadrien\ 40.2.jpg);"data-stellar-background-ratio="0.5">
+	<style>
+		/* Par défaut pour ordinateur */
+		#fh5co-header.fh5co-cover {
+		  background-image: url('images/Hadrien/Hadrien%2040.2.jpg');
+		  background-size: cover;
+		  background-position: center center;
+		  background-repeat: no-repeat;
+		  background-attachment: fixed; /* pour garder l'effet parallax sur desktop */
+		}
+	  
+		/* Pour les mobiles */
+		@media screen and (max-width: 768px) {
+		  #fh5co-header.fh5co-cover {
+			background-image: url('images/Hadrien/Hadrien%2040.jpg');
+			background-position: top center;
+			background-size: cover;
+			background-attachment: scroll; /* pour éviter les bugs sur mobile */
+		  }
+		}
+	  </style>
+	  
+	  <header id="fh5co-header" class="fh5co-cover" role="banner" data-stellar-background-ratio="0.5">
 		<div class="overlay"></div>
 		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center">
-					<div class="display-t">
-						<div class="display-tc animate-box" data-animate-effect="fadeIn">
-							<h1>Confirmez votre présence</h1>
-							<h2>Merci de confirmer votre présence en remplissant le formulaire ci-dessous</a></h2>
-						</div>
-					</div>
+		  <div class="row">
+			<div class="col-md-8 col-md-offset-2 text-center">
+			  <div class="display-t">
+				<div class="display-tc animate-box" data-animate-effect="fadeIn">
+				  <h1>Confirmez votre présence</h1>
+				  <h2>Merci de confirmer votre présence en remplissant le formulaire ci-dessous</h2>
 				</div>
+			  </div>
 			</div>
+		  </div>
 		</div>
-	</header>
-
+	  </header>
+	  
 	<div class="fh5co-section">
 		<div class="container">
 			<div class="row">

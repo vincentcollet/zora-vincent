@@ -77,6 +77,7 @@
 							</ul>
 						</li> -->
 						<li><a href="contact.html">RSVP</a></li>
+						<li><a href="gallery.html">Gallerie</a></li>
 					</ul>
 				</div>
 			</div>
@@ -84,23 +85,45 @@
 		</div>
 	</nav>
 
-	<header id="fh5co-header" class="fh5co-cover" role="banner" style="background-image:url(images/Hadrien/Hadrien\ 32.1.jpg);" data-stellar-background-ratio="0.5">
+	<style>
+		/* Par défaut pour ordinateur */
+		#fh5co-header.fh5co-cover {
+		  background-image: url('images/Hadrien/Hadrien%2032.1.jpg');
+		  background-size: cover;
+		  background-position: center center;
+		  background-repeat: no-repeat;
+		  background-attachment: fixed; /* Pour garder l'effet "parallax" léger si besoin */
+		}
+	  
+		/* Pour les mobiles */
+		@media screen and (max-width: 768px) {
+		  #fh5co-header.fh5co-cover {
+			background-image: url('images/Hadrien/Hadrien%2032.jpg');
+			background-position: top center;
+			background-size: cover;
+			background-attachment: scroll; /* Pour éviter des bugs de parallax sur mobile */
+		  }
+		}
+	  </style>
+	  
+	  <header id="fh5co-header" class="fh5co-cover" role="banner" data-stellar-background-ratio="0.5">
 		<div class="overlay"></div>
 		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center">
-					<div class="display-t">
-						<div class="display-tc animate-box" data-animate-effect="fadeIn">
-							<h1>Zora &amp; Vincent</h1>
-							<h2>Nous allons nous marier</h2>
-							<div class="simply-countdown simply-countdown-one"></div>
-							<p><a href="contact.html" class="btn btn-default btn-sm">Confirmez votre présence</a></p>
-						</div>
-					</div>
+		  <div class="row">
+			<div class="col-md-8 col-md-offset-2 text-center">
+			  <div class="display-t">
+				<div class="display-tc animate-box" data-animate-effect="fadeIn">
+				  <h1>Zora &amp; Vincent</h1>
+				  <h2>Nous allons nous marier</h2>
+				  <div class="simply-countdown simply-countdown-one"></div>
+				  <p><a href="contact.html" class="btn btn-default btn-sm">Confirmez votre présence</a></p>
 				</div>
+			  </div>
 			</div>
+		  </div>
 		</div>
-	</header>
+	  </header>
+	  
 
 <!-- Inclusion du script SimplyCountdown -->
 <script src="js/simplyCountdown.js"></script>
@@ -141,83 +164,103 @@
 			</div>
 		</div>
 	</div>
-	<div id="fh5co-event" class="fh5co-bg" style="background-image:url(images/Hadrien/Hadrien\ 38.1.jpg);">
+	<style>
+		/* Par défaut pour ordinateur */
+		#fh5co-event.fh5co-bg {
+		  background-image: url('images/Hadrien/Hadrien%2038.1.jpg');
+		  background-size: cover;
+		  background-position: center center;
+		  background-repeat: no-repeat;
+		}
+	  
+		/* Pour les mobiles */
+		@media screen and (max-width: 768px) {
+		  #fh5co-event.fh5co-bg {
+			background-image: url('images/Hadrien/Hadrien%2038.jpg');
+			background-position: top center;
+			background-size: cover;
+		  }
+		}
+	  </style>
+	  
+	  <div id="fh5co-event" class="fh5co-bg">
 		<div class="overlay"></div>
 		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
-					<span>La célébration</span>
-					<h2>Le programme</h2>
-				</div>
+		  <div class="row">
+			<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+			  <span>La célébration</span>
+			  <h2>Le programme</h2>
 			</div>
-			<div class="row">
-				<div class="display-t">
-					<div class="display-tc">
-						<div class="col-md-12">
-							<div class="col-md-4 col-sm-4 text-center">
-								<div class="event-wrap animate-box">
-									<h3>Mariage civil</h3>
-									<div class="event-col">
-										<i class="icon-clock"></i>
-										<span>11:30</span>
-										<span>12:00</span>
-									</div>
-									<div class="event-col">
-										<i class="icon-calendar"></i>
-										<span>Samedi 06</span>
-										<span>Septembre 2025</span>
-									</div>
-									<p>Le mariage civil se tiendra à la commune de Jemeppe-sur-Sambre à 11h30.</p>
-									<br>
-									<i class="icon-location2"></i>
-									<p>Place Communale, 20<br>5190 - Jemeppe-sur-Sambre</p>
-								</div>
-							</div>
-							<div class="col-md-4 col-sm-4 text-center">
-								<div class="event-wrap animate-box">
-									<h3>Mariage religieux</h3>
-									<div class="event-col">
-										<i class="icon-clock"></i>
-										<span>12:00</span>
-										<span>13:00</span>
-									</div>
-									<div class="event-col">
-										<i class="icon-calendar"></i>
-										<span>Samedi 06</span>
-										<span>Septembre 2025</span>
-									</div>
-									<p>Le mariage religieux sera célébré en l'Eglise Saint Martin de Jemeppe-sur Sambre à 12h. </p>
-									<br>
-									<i class="icon-location2"></i>
-									<p>Place Communale, 19<br>5190 - Jemeppe-sur-Sambre</p>
-								</div>
-							</div>
-							<div class="col-md-4 col-sm-4 text-center">
-								<div class="event-wrap animate-box">
-									<h3>Réception</h3>
-									<div class="event-col">
-										<i class="icon-clock"></i>
-										<span>13:30</span>
-										<span>05:00</span>
-									</div>
-									<div class="event-col">
-										<i class="icon-calendar"></i>
-										<span>Samedi 06</span>
-										<span>Septembre 2025</span>
-									</div>
-									<p>La réception se tiendra à la Carrière à Bioul dès 13h30</p>
-									<br>
-									<br>
-									<i class="icon-location2"></i>
-									<p>Rue d'Arbre, 36<br>5537 - Anhée</p>
-								</div>
-							</div>
-						</div>
+		  </div>
+		  <div class="row">
+			<div class="display-t">
+			  <div class="display-tc">
+				<div class="col-md-12">
+				  <div class="col-md-4 col-sm-4 text-center">
+					<div class="event-wrap animate-box">
+					  <h3>Mariage civil</h3>
+					  <div class="event-col">
+						<i class="icon-clock"></i>
+						<span>11:30</span>
+						<span>12:00</span>
+					  </div>
+					  <div class="event-col">
+						<i class="icon-calendar"></i>
+						<span>Samedi 06</span>
+						<span>Septembre 2025</span>
+					  </div>
+					  <p>Le mariage civil se tiendra à la commune de Jemeppe-sur-Sambre à 11h30.</p>
+					  <br>
+					  <i class="icon-location2"></i>
+					  <p>Place Communale, 20<br>5190 - Jemeppe-sur-Sambre</p>
 					</div>
+				  </div>
+				  <div class="col-md-4 col-sm-4 text-center">
+					<div class="event-wrap animate-box">
+					  <h3>Mariage religieux</h3>
+					  <div class="event-col">
+						<i class="icon-clock"></i>
+						<span>12:00</span>
+						<span>13:00</span>
+					  </div>
+					  <div class="event-col">
+						<i class="icon-calendar"></i>
+						<span>Samedi 06</span>
+						<span>Septembre 2025</span>
+					  </div>
+					  <p>Le mariage religieux sera célébré en l'Eglise Saint Martin de Jemeppe-sur-Sambre à 12h. </p>
+					  <br>
+					  <i class="icon-location2"></i>
+					  <p>Place Communale, 19<br>5190 - Jemeppe-sur-Sambre</p>
+					</div>
+				  </div>
+				  <div class="col-md-4 col-sm-4 text-center">
+					<div class="event-wrap animate-box">
+					  <h3>Réception</h3>
+					  <div class="event-col">
+						<i class="icon-clock"></i>
+						<span>13:30</span>
+						<span>05:00</span>
+					  </div>
+					  <div class="event-col">
+						<i class="icon-calendar"></i>
+						<span>Samedi 06</span>
+						<span>Septembre 2025</span>
+					  </div>
+					  <p>La réception se tiendra à la Carrière à Bioul dès 13h30</p>
+					  <br>
+					  <br>
+					  <i class="icon-location2"></i>
+					  <p>Rue d'Arbre, 36<br>5537 - Anhée</p>
+					</div>
+				  </div>
 				</div>
+			  </div>
 			</div>
+		  </div>
 		</div>
-	</div>
+	  </div>
+	  
 			<!--<div class="couple-wrap animate-box">
 				<div class="couple-half">
 					<div class="groom">

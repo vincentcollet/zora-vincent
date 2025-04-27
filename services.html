@@ -97,21 +97,40 @@
 		</div>
 	</nav>
 
-	<header id="fh5co-header" class="fh5co-cover fh5co-cover-sm" role="banner" style="background-image:url(images/Hadrien/Hadrien\ 27.1.jpg);">
+	<style>
+		/* Par défaut pour ordinateur */
+		#fh5co-header.fh5co-cover {
+		  background-image: url('images/Hadrien/Hadrien%2027.1.jpg');
+		  background-size: cover;
+		  background-position: center center;
+		  background-repeat: no-repeat;
+		}
+	  
+		/* Pour les mobiles */
+		@media screen and (max-width: 768px) {
+		  #fh5co-header.fh5co-cover {
+			background-image: url('images/Hadrien/Hadrien%2027.jpg');
+			background-position: top center;
+			background-size: cover;
+		  }
+		}
+	  </style>
+	  
+	  <header id="fh5co-header" class="fh5co-cover fh5co-cover-sm" role="banner">
 		<div class="overlay"></div>
 		<div class="fh5co-container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center">
-					<div class="display-t">
-						<div class="display-tc animate-box" data-animate-effect="fadeIn">
-							<h1>Informations</h1>
-							<h2>Vous retrouverez ci-dessous toutes les informations utiles</a></h2>
-						</div>
-					</div>
+		  <div class="row">
+			<div class="col-md-8 col-md-offset-2 text-center">
+			  <div class="display-t">
+				<div class="display-tc animate-box" data-animate-effect="fadeIn">
+				  <h1>Informations</h1>
+				  <h2>Vous retrouverez ci-dessous toutes les informations utiles</h2>
 				</div>
+			  </div>
 			</div>
+		  </div>
 		</div>
-	</header>
+	  </header>
 
 	<div id="fh5co-services" class="fh5co-section-gray">
 		<div class="container">

@@ -1,28 +1,11 @@
 $(document).ready(function() {
-	// MagnificPopup pour images normales
+	// MagnificPopup pour toutes les images de la galerie
 	var magnifPopup = function() {
-	  $('.image-popup').magnificPopup({
-		type: 'image',
-		removalDelay: 300,
-		mainClass: 'mfp-with-zoom',
-		gallery: {
-		  enabled: true
-		},
-		zoom: {
-		  enabled: true,
-		  duration: 300,
-		  easing: 'ease-in-out',
-		  opener: function(openerElement) {
-			return openerElement.is('img') ? openerElement : openerElement.find('img');
-		  }
-		}
-	  });
-  
-	  // MagnificPopup pour la galerie spéciale (gallery-popup)
-	  $('.gallery-popup').magnificPopup({
+	  $('#fh5co-gallery-list').magnificPopup({
+		delegate: 'a.image-popup', // seulement les <a> avec class "image-popup"
 		type: 'image',
 		gallery: {
-		  enabled: true
+		  enabled: true // Active la navigation entre les images
 		},
 		zoom: {
 		  enabled: true,
@@ -35,6 +18,7 @@ $(document).ready(function() {
 	  });
 	};
   
+	// MagnificPopup pour les vidéos (YouTube, Vimeo, Google Maps)
 	var magnifVideo = function() {
 	  $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
 		disableOn: 700,
@@ -46,7 +30,7 @@ $(document).ready(function() {
 	  });
 	};
   
-	// Call the functions
+	// Appeler les fonctions
 	magnifPopup();
 	magnifVideo();
   });
